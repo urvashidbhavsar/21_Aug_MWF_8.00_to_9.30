@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- table is a collection of rows and columns 
+        cell = it is a box which is generate from row and column.
+
+        for create table use =>  <table>
+        for create row => <tr> table row 
+        for create a column => <td> table data 
+        for create a column heading => <th> table heading 
+        for give a title of table => <caption> tag 
+        for table body => <tbody> tag 
+        for table footer => <tfoot> tag               
+
+        use some css property => height, width, text-align, background-color, color, border-color
+
+        cellpadding = give a space between cell border and content
+        cellspacing = give a space between two cells
+        when we apply rules all cellspacing removed.
+    -->
+    <table border="1" style="width:400px;text-align: center;" cellpadding="5px" cellspacing="5px" rules="all">
+        <caption><i>Employee details</i></caption>
+        <!-- 1st row -->
+        <tr>
+            <th>No.</th>
+            <th>Full Name</th>
+            <th>Position</th>
+            <th>Salary</td>
+        </tr>
+        <!-- 2nd row -->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Founder Microsoft</td>
+                <td>$1000</td>
+            </tr>
+            <!-- 3rd row -->
+            <tr>
+                <td>2</td>
+                <td>Steve Jobs</td>
+                <td>Founder Apple</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>Founder Google</td>
+                <td>$1100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark Zukarberg</td>
+                <td>Founder Facebook</td>
+                <td>$1300</td>
+            </tr>
+            <!-- <tfoot>
+            <tr>
+                <td>Hello</td>
+            </tr>
+        </tfoot> -->
+        </tbody>
+    </table>
+</body>
+
+</html>

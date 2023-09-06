@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- for merge cell use rowspan and colspan attribute.
+        both are used in <td> or <th> tag
+
+        when we use rowspan remove cell/columns from next row.
+        when we use colspan remove cell/column that particular row.
+    -->
+    <table border="1" style="width: 350px;" rules="all" cellpadding="5px">
+        <!-- 1st row -->
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Average</th>
+            <!-- <td>Average</td> -->
+            <th rowspan="2">Red Eyes</th>
+        </tr>
+        <!-- 2nd row -->
+        <tr>
+            <!-- <td>123</td> -->
+            <th>Height</th>
+            <th>Weight</th>
+            <!-- <td>Red Eyes</td> -->
+        </tr>
+        <!-- 3rd row -->
+        <tr>
+            <th>Male</th>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <th>Female</th>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table>
+</body>
+
+</html>
