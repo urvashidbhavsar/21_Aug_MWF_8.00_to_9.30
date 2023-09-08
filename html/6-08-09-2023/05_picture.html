@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- picture tag use to change image on window resize or display different image on diff devices -->
+    <!-- <picture>
+        <source media="(max-width: 600px)" srcset="video/kids.jpg">
+        <source media="(max-width: 1000px)" srcset="video/flower.jpg">
+        <img src="video/poster.jpg" alt="" height="300px" width="400px">
+    </picture> -->
+
+    <picture>
+        <source media="(min-width: 1000px)" srcset="video/flower.jpg">
+        <source media="(min-width: 600px)" srcset="video/kids.jpg">
+        <img src="video/poster.jpg" alt="" height="300px" width="400px">
+    </picture>
+</body>
+
+</html>
