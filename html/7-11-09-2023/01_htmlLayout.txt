@@ -1,0 +1,17 @@
+in layout there is 2 type of tag.
+
+(1) sementic tag : provide structure or tell your predefine content 
+    for ex, <table>, <header>, <footer>, <p>
+
+
+(2) non-sementic tag : nothing tell about its content 
+    for ex, <div>, <span>
+
+HTML layout :
+<header>
+<footer>
+<section>
+<nav>
+<article>
+<main> 
+<aside>
