@@ -1,0 +1,7 @@
+there are 2 graphics tag : 
+(1) svg  = shapes = circle, rect, polygon, text, line, gredientcolor etc 
+(2) canvas = js code 
+
+both tag are provide 2d graphics
+
+svg means Scalebal Verctor Graphics
