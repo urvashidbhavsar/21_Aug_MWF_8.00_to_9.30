@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .link1:link {
+            color: blue;
+        }
+
+        .link2:visited {
+            color: green;
+        }
+
+        .link3:active {
+            color: crimson
+        }
+
+        .link4:hover {
+            color: chocolate;
+        }
+
+        button {
+            height: 30px;
+            width: 100px;
+            background-color: blue;
+            color: white;
+            border: 2px solid blue;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: transparent;
+            color: blue;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        tr:first-child {
+            background-color: cadetblue;
+            color: black;
+        }
+
+        tr:nth-child(1) {
+            background-color: blue;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: chocolate;
+        }
+
+        /* tr:nth-child(1):hover {
+            color: black;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- start with (:) symbol -->
+    <a href="#" class="link1">Click Here</a>
+    <a href="#" class="link2">Click Here</a>
+    <a href="#" class="link3">Click Here</a>
+    <a href="#" class="link4">Click Here</a>
+    <button>Click Here</button>
+
+    <table border="1">
+        <!-- 1st row -->
+        <tr>
+            <td>Sr. No</td>
+            <td>Roll No</td>
+            <td>Name</td>
+            <td>Team</td>
+        </tr>
+        <!-- 2nd row -->
+        <tr>
+            <td>1</td>
+            <td>1001</td>
+            <td>Rohit</td>
+            <td>Red</td>
+        </tr>
+        <!-- 3rd row -->
+        <tr>
+            <td>2</td>
+            <td>1002</td>
+            <td>Rahul</td>
+            <td>Green</td>
+        </tr>
+        <!-- 4th row -->
+        <tr>
+            <td>3</td>
+            <td>1003</td>
+            <td>Poonam</td>
+            <td>Blue</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
