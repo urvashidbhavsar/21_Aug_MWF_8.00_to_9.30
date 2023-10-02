@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            border: 1px solid;
+            display: flex;
+            /* main use while set website responsive */
+            /* flex-direction: row-reverse;
+            flex-wrap: wrap-reverse; */
+            flex-flow: row wrap;
+            gap: 30px;
+            /* align-content depend on flex-wrap */
+            align-content: center; 
+            height: 700px;
+            justify-content: center;
+        }
+
+        .div1,
+        .div2,
+        .div3 {
+            height: 100px;
+            width: 50%;
+            font-size: 25px;
+        }
+
+        .div1 {
+            background-color: crimson;
+        }
+
+        .div2 {
+            background-color: darkgoldenrod;
+        }
+
+        .div3 {
+            background-color: deepskyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1">Div1</div>
+        <div class="div2">Div2</div>
+        <div class="div3">Div3</div>
+    </div>
+</body>
+
+</html>
