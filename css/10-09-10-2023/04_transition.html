@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: teal;
+            margin: 10px;
+        }
+
+        div:hover {
+            width: 300px;
+        }
+
+        .div1 {
+            /* transition means smooth move, dont set on hover effect */
+            transition-duration: 1s;
+            transition-property: all;
+            transition-timing-function: ease;
+            /* transition-delay: 2s; */
+        }
+
+        .div2 {
+            /* duration timing-function property */
+            /* transition: 1s ease-in all; */
+
+            /* duration property timing-function */
+            /* transition: 1s all ease-out; */
+            /* transition: 1s all ease-in-out; */
+            /* transition: 1s all linear; */
+            transition: 1s all cubic-bezier(1, 0, 0, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">Div 1</div>
+    <div class="div2">Div 2</div>
+</body>
+
+</html>

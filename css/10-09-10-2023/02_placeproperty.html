@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .mydiv {
+            height: 150px;
+            width: 150px;
+            border: 1px solid black;
+            margin: 50px;
+            display: grid;
+            /* apply element exect center vertically and horizontally */
+
+            /* it work proper with grid but if we use flex apply only vertically */
+            /* place-items: center; */
+
+            /* it work proper with grid but if we use flex apply only horizontally */
+            /* place-content: center; */
+        }
+
+        h4 {
+            /* it work proper with grid but if we use flex apply only vertically */
+            place-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <h4>Hello</h4>
+    </div>
+</body>
+
+</html>
