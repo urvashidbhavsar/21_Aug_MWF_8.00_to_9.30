@@ -1,0 +1,8 @@
+breakpoints for responsive website 
+
+extra small screen (mobile screen)             max-width:576px 
+small screen                                   min-width:576px 
+medium screen (tablet screen)                  min-width:768px 
+large screen (mini leptop screen)              min-width:992px 
+extra large (normal leptop)                    min-width:1140px = 1200px 
+extra extra large (big screen monitor)         min-width:1400px
