@@ -1,0 +1,31 @@
+@media (max-width:576px) {
+    .topheader{
+        display: none;
+    }
+}
+/* ============================================================================= */
+@media (min-width:576px) {
+    .topheader .topnav .socialIcon{
+        display: none !important;
+    }
+    .topheader .topnav .contactinfo li{
+        font-size: 14px;
+    }
+}
+/* ============================================================================= */
+@media (min-width:768px) {
+    .topheader .topnav .socialIcon{
+        display: flex !important;
+    }
+    .topheader .topnav .contactinfo li{
+        font-size: unset;
+    }
+}
+/* ============================================================================= */
+@media (min-width:992px) {
+    
+}
+/* ============================================================================= */
+@media (min-width:1200px) {
+    
+}

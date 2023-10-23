@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+/* ================================== */
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* border: 1px solid black; */
+}
+.padd-50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.padd-10{
+    padding: 10px 0px;
+}
+.btn{
+   background-color: red; 
+    height:61px;
+    padding: 0px 20px;
+    display: grid;
+    place-content: center;
+}
+.btn a{
+    color: white;
+}
+.btn a::before{
+    content: "";
+    height: 1px;
+    width: 20px;
+    background-color: white;
+    display: inline-block;
+    margin: 5px 7px;
+}
+/* ============================================ */
+.topheader{
+    background-color: black;
+}
+.topheader .topnav{
+    display: flex;
+    justify-content: space-between;
+}
+.topheader .topnav .contactinfo ul{
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+.topheader .topnav .contactinfo li::before{
+    content: "";
+    height: 1px;
+    width: 20px;
+    background-color: white;
+    display: inline-block;
+    margin: 5px 7px;
+}
+.topheader .topnav .socialIcon{
+    display: flex;
+    gap: 20px;
+}
+.topheader .topnav .socialIcon a {
+    color: white;
+    transition: 0.2s ease;
+}
+.topheader .topnav .socialIcon a span{
+    transition: 0.5s ease;
+}
+.topheader .topnav .socialIcon a:hover{
+    color: red;
+}
+.topheader .topnav .socialIcon a:hover span{
+    transform: rotateY(180deg);
+}
+/* =================================== */
+header{
+    background-color: rgb(30, 30, 30);
+}
+header .logo{
+    padding: 6px 0px;
+}
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .navbar .nav{
+    display: flex;
+    align-items: center;
+}
+header .navbar .nav ul{
+    display: flex;
+    gap: 40px;
+    padding: 0px 30px;
+}
+header .navbar .nav ul li{
+    padding: 6px;
+}
+header .navbar .nav ul li a{
+    color: white;
+}
+
