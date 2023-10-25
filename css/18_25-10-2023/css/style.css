@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+/* ================================== */
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* border: 1px solid black; */
+}
+.padd-50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.padd-10{
+    padding: 10px 0px;
+}
+.btn{
+   background-color: red; 
+    height:61px;
+    padding: 0px 20px;
+    display: grid;
+    place-content: center;
+    width: fit-content;
+}
+.btn a{
+    color: white;
+}
+.btn .line::before{
+    content: "";
+    height: 1px;
+    width: 20px;
+    background-color: white;
+    display: inline-block;
+    margin: 5px 7px;
+}
+/* ============================================ */
+.topheader{
+    background-color: black;
+}
+.topheader .topnav{
+    display: flex;
+    justify-content: space-between;
+}
+.topheader .topnav .contactinfo ul{
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+.topheader .topnav .contactinfo li::before{
+    content: "";
+    height: 1px;
+    width: 20px;
+    background-color: white;
+    display: inline-block;
+    margin: 5px 7px;
+}
+.topheader .topnav .socialIcon{
+    display: flex;
+    gap: 20px;
+}
+.topheader .topnav .socialIcon a {
+    color: white;
+    transition: 0.2s ease;
+}
+.topheader .topnav .socialIcon a span{
+    transition: 0.5s ease;
+}
+.topheader .topnav .socialIcon a:hover{
+    color: red;
+}
+.topheader .topnav .socialIcon a:hover span{
+    transform: rotateY(180deg);
+}
+/* =================================== */
+header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: rgba(30, 30, 30, 0.703);
+    /* filter: blur(10px); */
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 3px 3px 0px rgb(30, 30, 30);
+}
+header .logo{
+    padding: 6px 0px;
+}
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .navbar .nav{
+    display: flex;
+    align-items: center;
+}
+header .navbar .nav ul{
+    display: flex;
+    gap: 40px;
+    padding: 0px 30px;
+}
+header .navbar .nav ul li{
+    padding: 19px 6px;
+}
+header .navbar .nav ul li a{
+    color: white;
+}
+/* === dropdown === */
+header .menu{
+    position: relative;
+}
+header .menu:hover .submenu{
+    visibility: visible;
+    /* transform: scaleY(1); */
+    /* top: 61px; */
+}
+header .submenu{
+    visibility: hidden;
+    /* transform: scaleY(0); */
+    transform-origin: 100% 0%;
+    background-color: brown;
+    position: absolute;
+    width: 149px;
+    padding: 15px;
+    line-height: 30px;
+    top: 61px;
+    left: -4px;
+    /* transition: 0.5s cubic-bezier(0.6, 0.04, 0.98, 0.335); */
+}
+.togglebar{
+    display: none;
+    background-color: rgb(54, 53, 53);
+}
+.togglebar .menubtn{
+    display: flex;
+    justify-content: end;
+    padding: 10px 30px;
+}
+.togglebar .menubtn button{
+    padding: 10px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* ============================================================== */
+.homepage{
+    background: url(../images/banner.webp) center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.homepage::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.531);
+    z-index: -1;
+}
+.homepage .homepagep{
+    padding: 200px 0px;
+}
+.homepage .bannerText{
+    display: grid;
+    gap:30px;
+    justify-items: center;
+}
+.homepage .bannerText h1{
+    color: white;
+    font-size: calc(2.5vw + 30px);
+    width: 65%;
+    text-align: center;
+    line-height: 52px;
+}
+.homepage .bannerText p{
+    color: white;
+    font-size: 21px;
+    text-align: center;
+}

@@ -1,0 +1,68 @@
+@media (max-width:576px) {
+    .topheader{
+        display: none;
+    }
+    header .navbar .nav{
+        display: none !important;
+    }
+    .togglebar{
+        display: block !important;
+    }
+    .homepage .homepagep{
+        padding: 60px 0px !important;
+    }
+    .homepage .bannerText h1{
+        width: 100% !important;
+    }
+}
+/* ============================================================================= */
+@media (min-width:576px) {
+    .topheader .topnav .socialIcon{
+        display: none !important;
+    }
+    .topheader .topnav .contactinfo li{
+        font-size: 14px;
+    }
+    header .navbar .nav{
+        display: none !important;
+    }
+    .togglebar{
+        display: block !important;
+     }
+    .homepage .homepagep{
+        padding: 60px 0px !important;
+    }
+    .homepage .bannerText h1{
+        width: 100% !important;
+    }
+}
+/* ============================================================================= */
+@media (min-width:768px) {
+    .topheader .topnav .socialIcon{
+        display: flex !important;
+    }
+    .topheader .topnav .contactinfo li{
+        font-size: unset;
+    }
+}
+/* ============================================================================= */
+@media (min-width:992px) {
+    header .navbar .nav{
+        display: flex !important;
+    }
+     .togglebar{
+        display: none !important;
+     }
+    .homepage .homepagep{
+        padding: 120px 0px !important;
+    }
+    .homepage .bannerText h1{
+        width: 65% !important;
+    }
+}
+/* ============================================================================= */
+@media (min-width:1200px) {
+    .homepage .homepagep{
+        padding: 200px 0px !important;
+    }
+}
