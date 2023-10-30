@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mydiv {
+  height: auto;
+  width: 300px;
+  background-color: lightblue;
+  border: 2px solid black;
+  padding: 20px;
+}
+.mydiv h1 {
+  color: red;
+}
+.mydiv .subdiv {
+  height: inherit;
+  width: inherit;
+  padding: inherit;
+  border: inherit;
+  background-color: inherit;
+}
+.mydiv .subdiv h1 {
+  color: blue;
+}/*# sourceMappingURL=newstyle.css.map */
