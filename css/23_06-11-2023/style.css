@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{list-style: none;}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+/* ================================== */
+header{
+    position: fixed;
+    top :0;
+    width: 100%;
+    z-index: 1111;
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+}
+header .navbar .logo img{
+    height: 80px;
+    width: 80px;
+}
+header .navbar .logo{
+    flex: 0.5;
+}
+header .navbar .nav{
+    flex: 2;
+}
+header .navbar .nav ul{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+}
+header .navbar .nav ul li{
+    padding: 5px;
+}
+header .navbar .nav ul .menu::after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: red;
+    display: block;
+    scale: 0;
+    margin-top: 6px;
+}
+header .navbar .nav ul .menu:hover::after{
+    scale: 1;
+}
+header .navbar .nav ul li a{
+    color: white;
+}
+header .navbar .toggleMenu{
+    flex: 0.3;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+header .navbar .toggleMenu a{
+    color: white;
+}
+header .navbar .toggleMenu .togglebtn{
+    display: none;
+}
+header .navbar .toggleMenu button{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+header .navbar .global{
+    position: relative;
+}
+header .navbar .global .tooltip{
+    position: absolute;
+    top: 33px;
+    background-color: white;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    left: -21px;
+    visibility: hidden;
+}
+header .navbar .global:hover .tooltip{
+    visibility: visible;
+}
+/* ================================================= */
+.showbg{
+    background-color: rgba(0, 0, 0, 0.757);
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 0;
+    z-index: 111;
+    transition: 1s ease;
+}
+.showbg .dropmenu{
+    width: 530px;
+    margin: auto;
+    padding: 73px 68px;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.showbg h3,p{
+    color: white;
+}
+.showbg .dropmenu ul{
+    display: grid !important;
+    grid-template-columns: repeat(2,1fr) !important;
+    gap: 0 !important;
+    padding-top: 28px;
+}
+.innermenu:hover .showbg{
+    height: 50%;
+}
+.innermenu:hover .dropmenu{
+    opacity: 1;
+    transition-delay:0.5s;
+}
+/* ==================== */
+.homebanner{
+    background: url(images/banner.jpg) no-repeat center;
+    background-size: cover;
+   padding: 300px 0px;
+   position: relative;
+   z-index: 1;
+}
+.homebanner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.617);
+    z-index: -1;
+}
