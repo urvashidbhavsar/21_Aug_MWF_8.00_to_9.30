@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{list-style: none;}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+/* ================================== */
+header{
+    position: fixed;
+    top :0;
+    width: 100%;
+    z-index: 1111;
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+}
+header .navbar .logo img{
+    height: 80px;
+    width: 80px;
+}
+header .navbar .logo{
+    flex: 0.5;
+}
+header .navbar .nav{
+    flex: 2;
+}
+header .navbar .nav ul{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+}
+header .navbar .nav ul li{
+    padding: 5px;
+}
+header .navbar .nav ul .menu::after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: red;
+    display: block;
+    scale: 0;
+    margin-top: 6px;
+}
+header .navbar .nav ul .menu:hover::after{
+    scale: 1;
+}
+header .navbar .nav ul li a{
+    color: white;
+}
+header .navbar .toggleMenu{
+    flex: 0.3;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+header .navbar .toggleMenu a{
+    color: white;
+}
+header .navbar .toggleMenu .togglebtn{
+    display: none;
+}
+header .navbar .toggleMenu button{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+header .navbar .global{
+    position: relative;
+}
+header .navbar .global .tooltip{
+    position: absolute;
+    top: 33px;
+    background-color: white;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    left: -21px;
+    visibility: hidden;
+}
+header .navbar .global:hover .tooltip{
+    visibility: visible;
+}
+/* ================================================= */
+.innermenu{
+    position: relative;
+}
+.showbg{
+   background-color: rgba(0, 0, 0, 0.757);
+    width: 1400px;
+    position: absolute;
+    left: -750%;
+    top: -24px;
+    height: 0;
+    z-index: 111;
+    transition: 1s ease;
+    overflow: hidden;
+}
+.showbg .dropmenu{
+    width: 530px;
+    margin: auto;
+    padding: 73px 68px;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.showbg h3,p{
+    color: white;
+}
+.showbg .dropmenu ul{
+    display: grid !important;
+    grid-template-columns: repeat(2,1fr) !important;
+    gap: 0 !important;
+    padding-top: 28px;
+}
+.innermenu:hover .showbg{
+    height: 238px;
+}
+.innermenu:hover .dropmenu{
+    opacity: 1;
+    transition-delay:0.5s;
+}
+/* ==================== */
+.homebanner{
+    background: url(images/banner.jpg) no-repeat center;
+    background-size: cover;
+   position: relative;
+   z-index: 1;
+   padding: 50px 0px;
+}
+.homebanner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.617);
+    z-index: -1;
+}
+.homebanner .hometext{
+   padding: 150px 0px;
+}
+.homebanner .hometext .title{
+    background-color: rgb(7, 84, 179);
+    color: white;
+    padding: 7px;
+    width: fit-content;
+    font-style: italic;
+}
+.homebanner .hometext h1{
+    font-size: 40px;
+    color: white;
+    padding: 5px 0px;
+}
+.homebanner .hometext .blockcon{
+    border-left: 5px solid rgb(108, 108, 4);
+    margin-left: 40px;
+    padding-left: 20px;
+}
+.homebanner .hometext .blockcon p{
+    width: 380px;
+    padding-bottom: 20px;
+}
+.homebanner .hometext .blockcon button{
+    padding: 10px 20px;
+    background-color: rgb(108, 108, 4);
+    color: white;
+    font-size: 17px;
+    border: none;
+}
+/* ========================================= */
+.sliders{
+    padding-bottom: 50px;
+}
+.sliders .sliderFlex{
+    display: flex;
+}
+.sliders .sliderFlex .text{
+    background-color: rgba(0, 0, 255, 0.625);
+    width: 100%;
+    padding: 0px 20px;
+    line-height: 30px;
+    transition: 0.5s ease;
+    position: absolute;
+    bottom: 0;
+}
+.sliders .sliderFlex .subhead{
+   display: none;
+}
+.sliders .sliderFlex .slider1{
+    background: url(images/slider1.jpg) no-repeat center;
+    height: 350px;
+    flex :1;
+    transition: 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+.sliders .sliderFlex .slider1:hover{
+    flex: 2;
+}
+.sliders .sliderFlex .slider1:hover .subhead{
+    display: block;
+}
+.sliders .sliderFlex .slider2{
+    background: url(images/slider2.jpg) no-repeat center;
+    height: 350px;
+    flex :1;
+    transition: 0.5s ease;
+     position: relative;
+    overflow: hidden;
+}
+.sliders .sliderFlex .slider2:hover .subhead{
+    display: block;
+}
+.sliders .sliderFlex .slider2:hover{
+    flex: 2;
+}
+.sliders .sliderFlex .slider3{
+    background: url(images/slider4.jpg) no-repeat center;
+    height: 350px;
+    flex :1;
+    transition: 0.5s ease;
+     position: relative;
+    overflow: hidden;
+}
+.sliders .sliderFlex .slider3:hover{
+    flex: 2;
+}
+.sliders .sliderFlex .slider3:hover .subhead{
+ display: block;
+}
