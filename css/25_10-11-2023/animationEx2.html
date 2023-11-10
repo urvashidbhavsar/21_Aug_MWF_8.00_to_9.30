@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: rgb(15, 49, 173);
+        }
+
+        .box {
+            height: 100px;
+            width: 300px;
+            margin: 200px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .dots {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            transform: translate(10px, 10px);
+        }
+
+        .dot {
+            height: 8px;
+            width: 8px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .dot1 {
+            animation: dotMove 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s infinite alternate;
+        }
+
+        .dot2 {
+            animation: dotMove 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 1s infinite alternate;
+        }
+
+        .dot3 {
+            animation: dotMove 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 1.2s infinite alternate;
+        }
+
+        @keyframes dotMove {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Loading</h1>
+        <div class="dots">
+            <div class="dot1 dot"></div>
+            <div class="dot2 dot"></div>
+            <div class="dot3 dot"></div>
+        </div>
+    </div>
+</body>
+
+</html>

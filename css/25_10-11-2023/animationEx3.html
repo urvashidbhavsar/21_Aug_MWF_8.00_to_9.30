@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            margin: 150px auto;
+            padding: 30px;
+            display: grid;
+            place-content: center;
+        }
+
+        .shape {
+            height: 50px;
+            width: 50px;
+            background-color: chocolate;
+            clip-path: circle(50% at 50% 50%);
+            animation: boxmove 2s ease infinite;
+            /* transform: translate(150px, 150px); */
+        }
+
+        .border {
+            height: 200px;
+            width: 200px;
+        }
+
+        @keyframes boxmove {
+
+            0% {
+                transform: translate(0);
+                clip-path: circle(50% at 50% 50%);
+                background-color: chocolate;
+            }
+
+            25% {
+                transform: translateX(150px);
+                clip-path: none;
+                background-color: green;
+            }
+
+            50% {
+                transform: translate(150px, 150px);
+                clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                background-color: blue;
+            }
+
+            75% {
+                transform: translate(0, 150px);
+                clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                background-color: crimson;
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="border">
+            <div class="shape"></div>
+        </div>
+    </div>
+</body>
+
+</html>
