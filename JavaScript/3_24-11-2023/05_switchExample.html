@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- two number input
+        user select (>,<,>=,<=,==,!=)
+    -->
+    <script>
+        var selectOp = 7;
+        var num1 = 55, num2 = 55, res;
+        switch (selectOp) {
+            case 1:
+                res = (num1 < num2)
+                document.write(res);
+                break
+            case 2:
+                res = (num2 < num1)
+                document.write(res)
+                break;
+            case 3:
+                res = (num2 <= num1)
+                document.write(res)
+                break;
+            case 4:
+                res = (num2 >= num1)
+                document.write(res)
+                break;
+            case 5:
+                res = (num2 == num1)
+                document.write(res)
+                break;
+            case 6:
+                res = (num2 != num1)
+                document.write(res)
+                break;
+            default:
+                document.write("select in 1 to 6")
+                break;
+        }
+    </script>
+</body>
+
+</html>
