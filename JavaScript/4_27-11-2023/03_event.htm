@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            border: 1px solid black;
+            width: fit-content;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- mouseEvent -->
+    <button onclick="clickEvent()">click</button>
+    <button ondblclick="clickEvent()">double click</button>
+    <h1 onmousedown="clickEvent()">click here (mouseDown)</h1>
+    <h1 onmouseup="leaveContent()">Mouse Up event</h1>
+    <h1 onmouseenter="clickEvent()">mouse enter</h1>
+    <h1 onmouseleave="clickEvent()">mouse leave</h1>
+    <h1 onmousemove="clickEvent()">mouse move</h1>
+    <h1 onmouseout="clickEvent()">mouse out</h1>
+    <h1 onmouseover="clickEvent()">mouse over</h1>
+    <h1 onmousewheel="clickEvent()">mousewheel</h1>
+
+    <script>
+        function clickEvent() {
+            alert('hello')
+        }
+        function leaveContent() {
+            alert("leave content")
+        }
+    </script>
+</body>
+
+</html>
