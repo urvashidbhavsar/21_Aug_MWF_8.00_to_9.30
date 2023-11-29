@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="openlink()">Open</button>
+    <button onclick="closelink()">close</button>
+
+    <script>
+        var opn = "https://github.com/";
+        var cls;
+        function openlink() {
+            cls = window.open(opn, "_blank")
+        }
+        function closelink() {
+            cls.window.close()
+        }
+    </script>
+</body>
+
+</html>
