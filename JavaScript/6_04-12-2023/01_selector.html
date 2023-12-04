@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="mypara">Example 1</p>
+    <p class="mypara">Example 2</p>
+
+    <div>Div 1</div>
+    <div>Div 2</div>
+    <script>
+        let para = document.getElementsByClassName("mypara");
+        for (var i = 0; i < para.length; i++) {
+            para[i].style.color = "blue";
+            para[i].style.backgroundColor = "pink"
+        }
+
+        let div = document.getElementsByTagName("div");
+        for (var i = 0; i < div.length; i++) {
+            div[i].style.color = "red"
+            // alert(div.length)
+        }
+    </script>
+</body>
+
+</html>

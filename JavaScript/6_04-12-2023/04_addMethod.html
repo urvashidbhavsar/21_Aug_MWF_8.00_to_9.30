@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            height: 100px;
+            width: 100px;
+            background-color: chocolate;
+            border: 1px solid black;
+            transition: 0.5s ease;
+        }
+
+        /* create a logically class which is not include in html structure */
+        .change {
+            height: 150px;
+            width: 150px;
+            background-color: blueviolet;
+            transition: 0.5s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="addCss()">Add CSS</button>
+    <button onclick="removeCss()">remove css</button>
+    <br>
+    <div class="div1"></div>
+
+    <script>
+        // document.body.style.backgroundColor
+        function addCss() {
+            let div = document.querySelector(".div1")
+            // div.style.backgroundColor = "pink"
+            div.classList.add("change")
+        }
+        function removeCss() {
+            let div = document.querySelector(".div1")
+            div.classList.remove("change")
+        }
+    </script>
+</body>
+
+</html>
