@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head1 {
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: blue;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="toggleCss()">Toggle Method</button>
+    <button onclick="checkClass()">Contains Method</button>
+
+    <h1 id="head">Hello world</h1>
+
+    <script>
+        function toggleCss() {
+            let h1 = document.getElementById("head");
+            h1.classList.toggle("head1")
+        }
+
+        function checkClass() {
+            let h1 = document.getElementById("head");
+            if (h1.classList.contains("head1") == true) {
+                alert("class exist")
+            } else {
+                alert("class not exist")
+            }
+        }
+    </script>
+</body>
+
+</html>

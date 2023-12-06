@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            background-color: rgb(213, 213, 213);
+            color: gray;
+            border: 1px solid gray;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">click to show</button>
+
+    <script>
+        let b = document.getElementById("btn");
+        b.addEventListener("click", msg);
+        function msg() {
+            alert("button disable after clicking")
+            b.removeEventListener("click", msg)
+            b.classList.add("btn")
+        }
+    </script>
+</body>
+
+</html>

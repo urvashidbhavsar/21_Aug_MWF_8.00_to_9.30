@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title {
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* logically class not added in html structure. */
+        .title1 {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="classNameEx()">add css</button>
+
+    <h1 class="title" id="newtitle">hello user</h1>
+
+    <script>
+        function classNameEx() {
+            let heading1 = document.getElementById("newtitle");
+            if (heading1.className == "title") {
+                heading1.className = "title1"
+            } else {
+                heading1.className = "title"
+            }
+        }
+    </script>
+</body>
+
+</html>
