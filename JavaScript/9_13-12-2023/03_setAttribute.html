@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .newlink {
+            color: blue;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="createLink()">click to create link</button>
+    <br><br>
+    <a id="link1">open link</a>
+
+    <script>
+        function createLink() {
+            let link = document.querySelector("#link1");
+            // link.setAttribute("href", "https://codepen.io/")
+            link.setAttribute("class", "newlink")
+        }
+    </script>
+</body>
+
+</html>
