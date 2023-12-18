@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field {
+            width: 500px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 10px;
+            gap: 20px
+        }
+
+        span {
+            color: red;
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+
+        .changeBorder {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="field">
+            <div>
+                <label for="">Enter Name : </label>
+            </div>
+            <div>
+                <input type="text" name="" id="username" onblur="return nameValidation()"
+                    onkeyup="return checkNameEx()">
+            </div>
+            <div>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="field">
+            <div>
+                <button onclick="return nameValidation()">Click Here</button>
+            </div>
+            <div></div>
+        </div>
+    </form>
+
+    <script>
+        function nameValidation() {
+            let uname = document.getElementById("username");
+            if (uname.value == "" || uname.value == null) {
+                // alert("Enter name")
+                document.getElementById("msg").innerHTML = "Enter name";
+                uname.classList.add("changeBorder")
+                uname.focus()
+                return false
+            }
+        }
+        // expression 
+        function checkNameEx() {
+            let uname = document.getElementById("username");
+            // let ex = /^[a-zA-Z.\s]*$/;
+            let ex = /^[a-zA-Z]*$/;
+            if (!(ex.test(uname.value))) {
+                document.getElementById("msg").innerHTML = "Enter proper name";
+                uname.classList.add("changeBorder")
+                return false;
+            } else if (uname.value.length < 2) {
+                document.getElementById("msg").innerHTML = "Enter atleast 2 character";
+                uname.classList.add("changeBorder")
+                return false;
+            } else {
+                document.getElementById("msg").innerHTML = "";
+                uname.classList.remove("changeBorder")
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
