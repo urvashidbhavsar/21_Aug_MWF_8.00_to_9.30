@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+
+        .error {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <label for="">Enter Mobile No : </label>
+        <input type="text" name="" id="mno" onblur="return checkNo()" onkeyup="return checkMobileNoEx()" maxlength="10">
+        <span id="msg"></span>
+
+        <br><br>
+        <button onclick="return checkNo()">click here</button>
+    </form>
+
+    <script>
+        function checkNo() {
+            let mobile = document.getElementById("mno");
+            if (mobile.value == "" || mobile.value == null) {
+                document.getElementById("msg").innerHTML = "Enter Mobile no";
+                mobile.classList.add("error");
+                mobile.focus()
+                return false
+            }
+        }
+        // keyboard event 
+        function checkMobileNoEx() {
+            let mobile = document.getElementById("mno");
+            let mEx = /^[0-9]*$/;
+            let start = /^[6-9]/;
+            if (!(mEx.test(mobile.value)) || !(start.test(mobile.value))) {
+                document.getElementById("msg").innerHTML = "Enter proper number";
+                mobile.classList.add("error")
+                return false
+            } else if (mobile.value.length < 10) {
+                document.getElementById("msg").innerHTML = "Enter atleast 10 digits";
+                mobile.classList.add("error")
+                return false
+            } else {
+                document.getElementById("msg").innerHTML = "";
+                mobile.classList.remove("error")
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>

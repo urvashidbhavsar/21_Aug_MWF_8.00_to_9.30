@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+
+        .error {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <label for="">Enter Email id: </label>
+        <input type="text" name="" id="mail" onblur="return checkMail()" onkeyup="return emailCheckEx()">
+        <span id="msg" class="msg"></span>
+
+        <br><br>
+        <button onclick="return checkMail()">click here</button>
+    </form>
+
+    <script>
+        function checkMail() {
+            let email = document.getElementById("mail");
+            if (email.value == "" || email.value == null) {
+                document.getElementById("msg").innerHTML = "Enter Email";
+                email.classList.add("error");
+                email.focus();
+                return false;
+            }
+        }
+        function emailCheckEx() {
+            let email = document.getElementById("mail");
+            // let emailEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            let emailEx = /^[a-z0-9\.#$%^]+@[a-z]+\.[a-z]{2,3}$/;
+            if (emailEx.test(email.value)) {
+                document.getElementById("msg").innerHTML = ""
+                email.classList.remove("error")
+                return false
+            } else {
+                document.getElementById("msg").innerHTML = "Enter Proper Email"
+                email.classList.add("error")
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>
