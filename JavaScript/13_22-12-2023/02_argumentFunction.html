@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="addition(23, 12,'p1')">sum</button>
+    <button onclick="addition(11, 11,'p2')">sum1</button>
+    <button onclick="addition(100, 110,'p3')">sum2</button>
+
+    <p>Sum : <span id="p1"></span></p>
+    <p>Sum1 : <span id="p2"></span></p>
+    <p>Sum2 : <span id="p3"></span></p>
+
+    <script>
+        function addition(num1, num2, id) {
+            // console.log(num1 + num2);
+            // document.write(num1 + num2);
+            document.getElementById(id).innerHTML = num1 + num2
+        }
+    </script>
+</body>
+
+</html>

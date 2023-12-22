@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .msg {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <label for="">Gender</label>
+        <input type="radio" name="gen" id="male" onblur="return checkValidate()"> Male
+        <input type="radio" name="gen" id="female"> Female
+
+        <span id="msg1" class="msg"></span>
+        <br><br>
+
+        <label for="">languages </label>
+        <input type="checkbox" name="check1" id="c1"> Gujarati
+        <input type="checkbox" name="check2" id="c2"> Hindi
+        <input type="checkbox" name="check3" id="c3"> English
+        <span id="msg2" class="msg"></span>
+
+        <br><br>
+        <label for="">city</label>
+        <select name="" id="citylist">
+            <option value="-1">---select---</option>
+            <option value="">surat</option>
+        </select>
+        <span id="msg3" class="msg"></span>
+
+        <br><br>
+        <button onclick="return checkValidate()">click here</button>
+    </form>
+
+    <script>
+        function checkValidate() {
+            let m = document.getElementById("male")
+            let f = document.getElementById("female")
+            if (m.checked == false && f.checked == false) {
+                document.getElementById("msg1").innerHTML = "select gender"
+            } else {
+                document.getElementById("msg1").innerHTML = "";
+            }
+
+            let chk1 = document.getElementById("c1");
+            let chk2 = document.getElementById("c2");
+            let chk3 = document.getElementById("c3");
+            if (chk1.checked == false && chk2.checked == false && chk3.checked == false) {
+                document.getElementById("msg2").innerHTML = "select languages";
+            } else {
+                document.getElementById("msg2").innerHTML = "";
+            }
+
+            let list = document.getElementById("citylist")
+            if (list.value == "-1") {
+                document.getElementById("msg3").innerHTML = "Select city"
+            } else {
+                document.getElementById("msg3").innerHTML = ""
+            }
+            return false
+        }
+    </script>
+</body>
+
+</html>

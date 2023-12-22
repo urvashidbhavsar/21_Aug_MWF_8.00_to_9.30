@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="padding: 10px;">
+        <tr>
+            <td>Firstname</td>
+            <td>
+                <input type="text" name="" id="fname" onblur="return checkBlank('fname', 'msg1')"
+                    onclick="return checkBlank('fname','msg1')" onkeyup="return inputpattn(this, 'msg1')">
+            </td>
+            <td>
+                <span id="msg1" class="msg"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Middlename</td>
+            <td>
+                <input type="text" name="" id="mname" onblur="return checkBlank('mname', 'msg2')"
+                    onclick="return checkBlank('mname','msg2')" onkeyup="return inputpattn(this, 'msg2')">
+            </td>
+            <td>
+                <span id="msg2" class="msg"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Lastname</td>
+            <td>
+                <input type="text" name="" id="lname" onblur="return checkBlank('lname', 'msg3')"
+                    onclick="return checkBlank('lname','msg3')" onkeyup="return inputpattn(this, 'msg3')">
+            </td>
+            <td>
+                <span id="msg3" class="msg"></span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <button onclick="">click here</button>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function checkBlank(blank, msg) {
+            // if (blank.value == "" || blank.value == null) {
+            //     document.getElementById(msg).innerHTML = "Please, fill field"
+            // }
+            if (document.getElementById(blank).value == "") {
+                document.getElementById(msg).innerHTML = "please, fill this field";
+            }
+            return false
+        }
+
+        function inputpattn(input, msg) {
+            var ptn = /^[a-zA-Z]*$/
+            if (!(ptn.test(input.value))) {
+                document.getElementById(msg).innerHTML = "Invalid name"
+            } else if (input.value.length < 2) {
+                document.getElementById(msg).innerHTML = "inputed value not less than 2"
+            }
+            else {
+                document.getElementById(msg).innerHTML = ""
+            }
+            return false
+        }
+    </script>
+</body>
+
+</html>
