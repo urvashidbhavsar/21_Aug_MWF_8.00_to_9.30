@@ -1,0 +1,61 @@
+jquery is a js library.
+
+version = jquery3
+3.7.1
+
+website : https://jquery.com/
+
+how to use : 
+(1) download jquery plugin 
+(2) use via cdn 
+
+
+syntax :
+$(document).ready(function(){
+    $("selector").event_method(function(){
+        $("selector").jquery_function();
+    })
+})
+
+selector : class, id, element, group etc 
+event : click, keyboard etc
+
+first line ready only once.
+
+functions / method : 
+(1) display method :
+    hide(), show(), toggle()
+
+(2) fade method : 
+    fadeIn(), fadeOut(), fadeToggle(), fadeTo() 
+
+(3) slide functions : 
+    slideUp(), slideDown(), slideToggle()
+
+(4) get and set attribute function :
+    text(), html(), val(), attr()
+
+(5) add functions : 
+    append(), prepend(), before(), after(), insertBefore(), insertAfter(), appendTo(), prependTo() 
+
+(6) remove function :
+    empty(), remove() 
+
+(7)  wrap function :
+    wrap(), wrapAll(), wrapInner(), unwrap()
+
+(8) copy function : clone() 
+(9) stop function : stop()
+(10) animation function : animate() 
+(11) css method : css() 
+(12) css class function : 
+    addClass(), removeClass(), toggleClass(), hasClass()
+
+(13) scroll function : scrollTop() 
+
+Traversing : 
+(14) ancestor : parent(), parents(), parentsUntil() 
+(15) decendent : find(), children()
+(16) siblings : siblings(), next(), nextAll(), nextUntil(), prev(), prevAll(), prevUntil()
+(17) filter : filter(), first(), last(), eq(), not()
+(18) ajax : load()

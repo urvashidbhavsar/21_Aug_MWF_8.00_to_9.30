@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image1 {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=420&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8MTAwODU0M3x8ZW58MHx8fHx8"
+        alt="" class="image1">
+
+    <script>
+        $(document).ready(function () {
+            $(".image1").mouseover(function () {
+                $(".image1").fadeTo(1000, 1)
+            })
+            $(".image1").mouseout(function () {
+                $(".image1").fadeTo(1000, 0.5)
+            })
+        })
+    </script>
+</body>
+
+</html>
