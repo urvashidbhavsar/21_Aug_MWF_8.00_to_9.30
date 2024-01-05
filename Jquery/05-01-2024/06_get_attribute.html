@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- get and set attribute function : html(), text(), val(), attr() -->
+    <button id="btn1">html</button>
+    <button id="btn2">text</button>
+    <button id="btn3">value</button>
+    <button id="btn4">attribute</button>
+
+    <hr>
+    <p id="p1"><b>hello world</b></p>
+    data : <input type="text" value="abc">
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                alert($("#p1").html());
+            })
+            $("#btn2").click(function () {
+                alert($("#p1").text());
+            })
+            $("#btn3").click(function () {
+                alert($("input").val())
+            })
+            $("#btn4").click(function () {
+                alert($("input").attr("type"))
+            })
+        })
+    </script>
+
+</body>
+
+</html>
