@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <h1>Hello world</h1>
+    <div class="div1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere placeat laboriosam voluptas a nam dolore, omnis
+        minus vero voluptate nulla ratione, aliquid dolorum. Quo culpa adipisci, vel ipsa voluptatibus eveniet.
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // $("h1").css("color", "red")
+            $("h1").css({
+                color: "blue",
+                backgroundColor: "pink",
+                fontFamily: "Arial",
+                fontSize: "50px"
+            })
+            $(".div1").css({
+                height: "auto",
+                width: "300px",
+                border: "1px solid black",
+                padding: "15px"
+            })
+        })
+    </script>
+</body>
+
+</html>
