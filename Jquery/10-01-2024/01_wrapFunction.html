@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            margin: 20px 50px;
+        }
+
+        .mydiv {
+            width: fit-content;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- there is 4 wrap functions : wrap(), wrapAll(), wrapInner(), unwrap() -->
+    <button id="btn1">Wrap</button>
+    <p class="para">paragraph1</p>
+    <p class="para">paragraph2</p>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".para").wrap("<div class='mydiv'></div>")
+            })
+        })
+    </script>
+
+    <hr>
+    <button id="btn2">wrapAll</button>
+    <p class="para1">paragraph1</p>
+    <p class="para1">paragraph2</p>
+
+    <script>
+        $(function () {
+            $("#btn2").click(function () {
+                $(".para1").wrapAll("<div class='mydiv'></div>")
+            })
+        })
+    </script>
+
+    <hr>
+    <button id="btn3">wrap inner</button>
+    <p class="para2">paragraph1</p>
+    <p class="para2">paragraph2</p>
+
+    <script>
+        $(function () {
+            $("#btn3").click(function () {
+                $(".para2").wrapInner("<b></b>")
+            })
+        })
+    </script>
+
+    <hr>
+    <button id="btn4">unwrap</button>
+    <div class="mydiv">
+        <p class="para3">paragraph1</p>
+        <p class="para3">paragraph2</p>
+    </div>
+
+    <script>
+        $(function () {
+            $("#btn4").click(function () {
+                $(".para3").unwrap()
+            })
+        })
+    </script>
+</body>
+
+</html>

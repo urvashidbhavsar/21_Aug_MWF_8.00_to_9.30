@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,
+        ul,
+        li,
+        p {
+            border: 1px solid gray;
+            margin: 20px;
+        }
+
+        .change {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <button id="btn1">click here</button>
+    <hr>
+
+    <div class="main">main
+        <div class="sub">sub
+            <ul>ul
+                <li>list 1</li>
+                <li>list 2</li>
+            </ul>
+            <p>hello world</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                // $("p").parent(".sub1").addClass("change")
+                // $("p").parents("body").addClass("change")
+                $("p").parentsUntil("body").addClass("change")
+            })
+        })
+    </script>
+</body>
+
+</html>
