@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bxslider css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        img {
+            height: 600px;
+            width: 100%;
+            /* transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); */
+        }
+
+        .bx-wrapper .bx-pager {
+            bottom: 22px;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a {
+            background: white;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+            background-color: red;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a:hover {
+            background-color: red;
+        }
+
+        .bx-wrapper {
+            box-shadow: none;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bxslider">
+        <div>
+            <img src="https://wallpapers.com/images/featured/beautiful-3vau5vtfa3qn7k8v.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/459203/pexels-photo-459203.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="">
+        </div>
+        <div>
+            <img src="https://images6.alphacoders.com/111/1118696.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/372166/pexels-photo-372166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="">
+        </div>
+    </div>
+
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bxslider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/vendor/jquery.easing.1.3.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".bxslider").bxSlider({
+                mode: "horizontal",
+                speed: 500,
+                // slideMargin: 50
+                // startSlide: 3,
+                // randomStart: true,
+                // infiniteLoop: false,
+                // hideControlOnEnd: true,
+                // easing: "cubic-bezier(0.19, 1, 0.22, 1)",
+                // ticker: true,
+                controls: false,
+                auto: true,
+                autoHover: true,
+            });
+        })
+    </script>
+</body>
+
+</html>

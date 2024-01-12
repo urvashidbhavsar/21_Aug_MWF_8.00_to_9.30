@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        img {
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <div class="owl-carousel owl-theme">
+        <div>
+            <img src="https://img.freepik.com/premium-photo/pink-sunset-with-palm-trees-horizon_654523-31.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://img.freepik.com/free-photo/snowy-mountain-peak-starry-galaxy-majesty-generative-ai_188544-9650.jpg"
+                alt="">
+        </div>
+        <div>
+            <img src="https://c4.wallpaperflare.com/wallpaper/448/174/357/neon-4k-hd-best-for-desktop-wallpaper-thumb.jpg"
+                alt="">
+        </div>
+        <div>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/025/067/762/small_2x/4k-beautiful-colorful-abstract-wallpaper-photo.jpg"
+                alt="">
+        </div>
+        <div>
+            <img src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-10_1562-745.jpg"
+                alt="">
+        </div>
+        <div>
+            <img src="https://c4.wallpaperflare.com/wallpaper/108/140/869/digital-digital-art-artwork-fantasy-art-drawing-hd-wallpaper-thumb.jpg"
+                alt="">
+        </div>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_640.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://c4.wallpaperflare.com/wallpaper/952/536/1006/winter-4k-pc-desktop-wallpaper-preview.jpg"
+                alt="">
+        </div>
+    </div>
+
+    <!-- owl carousel js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                // center: true,
+                // stagePadding: 50,
+                // dotsEach: true,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true,
+                smartSpeed: 1000,
+                // items: 1
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 2
+                    },
+                    768: {
+                        item: 3
+                    },
+                    992: {
+                        items: 4
+                    },
+                    1200: {
+                        items: 5
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

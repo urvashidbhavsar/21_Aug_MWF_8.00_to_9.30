@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bxslider css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        img {
+            height: 600px;
+            width: 100%;
+            /* transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); */
+        }
+
+        .bx-wrapper .bx-pager {
+            bottom: 22px;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a {
+            background: white;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+            background-color: red;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a:hover {
+            background-color: red;
+        }
+
+        .bx-wrapper {
+            box-shadow: none;
+            border: none;
+        }
+
+        .slider {
+            padding: 250px 100px;
+        }
+
+        .slider1 {
+            background: url(https://wallpapers.com/images/featured/beautiful-3vau5vtfa3qn7k8v.jpg) no-repeat center;
+            background-size: cover;
+            width: 100%;
+        }
+
+        .slider2 {
+            background: url(https://images.pexels.com/photos/459203/pexels-photo-459203.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center;
+            background-size: cover;
+            width: 100%;
+        }
+
+        .slider3 {
+            background: url(https://images6.alphacoders.com/111/1118696.jpg) no-repeat center;
+            background-size: cover;
+            width: 100%;
+        }
+
+        .slider4 {
+            background: url(https://images.pexels.com/photos/372166/pexels-photo-372166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center;
+            background-size: cover;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bxslider">
+        <div class="slider slider1">
+            <h1>Image 1</h1>
+        </div>
+        <div class="slider slider2">
+            <h1>Image 2</h1>
+        </div>
+        <div class="slider slider3">
+            <h1>Image 3</h1>
+        </div>
+        <div class="slider slider4">
+            <h1>Image 4</h1>
+        </div>
+    </div>
+
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bxslider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/vendor/jquery.easing.1.3.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".bxslider").bxSlider();
+        })
+    </script>
+</body>
+
+</html>
