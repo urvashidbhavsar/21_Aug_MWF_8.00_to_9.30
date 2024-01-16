@@ -1,0 +1,6 @@
+ajax means aysnchronised javascript and xml 
+
+xml = extensible markup language.
+
+used to load an external file without reload current page.
+

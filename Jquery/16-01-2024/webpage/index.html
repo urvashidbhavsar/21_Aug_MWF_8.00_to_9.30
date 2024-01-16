@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div id="animation_loader"></div>
+
+    <section id="mainpage">
+        <section id="header"></section>
+        <section class="homepage">
+            <div class="container homepagep">
+                <div class="bannerText">
+                    <h1>Best technology and awesome service we offer</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <div class="btn">
+                        <a href="">check our services
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="serviceSec">
+            <div class="container padd-50">
+                <div class="title">
+                    <div class="side_title">
+                        <p>services</p>
+                    </div>
+                    <div class="main_title">
+                        <h1>A height level service provider that recommended to any companies</h1>
+                    </div>
+                </div>
+                <!-- grid -->
+                <div class="gridBox padd-50">
+                    <div class="Box">
+                        <div>
+                            <img src="images/services1.svg" alt="">
+                        </div>
+                        <div>
+                            <h3>Power and Energ</h3>
+                        </div>
+                        <div>
+                            <a href="">Learn More <span class="fa-solid fa-arrow-right"></span></a>
+                        </div>
+                    </div>
+                    <div class="Box">
+                        <div>
+                            <img src="images/services2.svg" alt="">
+                        </div>
+                        <div>
+                            <h3>Power and Energ</h3>
+                        </div>
+                        <div>
+                            <a href="">Learn More <span class="fa-solid fa-arrow-right"></span></a>
+                        </div>
+                    </div>
+                    <div class="Box">
+                        <div>
+                            <img src="images/services3.svg" alt="">
+                        </div>
+                        <div>
+                            <h3>Power and Energ</h3>
+                        </div>
+                        <div>
+                            <a href="">Learn More <span class="fa-solid fa-arrow-right"></span></a>
+                        </div>
+                    </div>
+                    <div class="Box Box4">
+                        <div>
+                            <img src="images/services4.svg" alt="">
+                        </div>
+                        <div>
+                            <h3>Power and Energ</h3>
+                        </div>
+                        <div>
+                            <a href="">Learn More <span class="fa-solid fa-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="imgGallery">
+            <div class="flexImgs1">
+                <div class="ImageBox">
+                    <div class="">
+                        <img src="images/gallery1.jpg" alt="">
+                    </div>
+                    <div class="boxText">
+                        <p>Gas & oil</p>
+                        <h1>Power and Energy</h1>
+                    </div>
+                </div>
+                <div class="ImageBox">
+                    <div class="">
+                        <img src="images/gallery2.jpg" alt="">
+                    </div>
+                    <div class="boxText">
+                        <p>Gas & oil</p>
+                        <h1>Power and Energy</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flexImgs2">
+                <div class="ImageBox">
+                    <div class="">
+                        <img src="images/gallery3.jpg" alt="">
+                    </div>
+                    <div class="boxText">
+                        <p>Gas & oil</p>
+                        <h1>Power and Energy</h1>
+                    </div>
+                </div>
+                <div class="ImageBox">
+                    <div class="">
+                        <img src="images/gallery4.jpg" alt="">
+                    </div>
+                    <div class="boxText">
+                        <p>Gas & oil</p>
+                        <h1>Power and Energy</h1>
+                    </div>
+                </div>
+                <div class="ImageBox">
+                    <div class="">
+                        <img src="images/gallery5.jpg" alt="">
+                    </div>
+                    <div class="boxText">
+                        <p>Gas & oil</p>
+                        <h1>Power and Energy</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer"></section>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#header").load("header.html")
+            $("#footer").load("footer.html")
+
+            $("#animation_loader").load("loader.html", function () {
+                $("#animation_loader").fadeOut(2000, function () {
+                    $("#mainpage").fadeIn()
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

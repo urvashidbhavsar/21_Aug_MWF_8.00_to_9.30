@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <section id="header"></section>
+    <section id="footer"></section>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#header").load("header.html")
+            $("#footer").load("footer.html")
+        })
+    </script>
+</body>
+
+</html>
