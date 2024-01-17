@@ -1,0 +1,17 @@
+bootstrap is a css library or framework.
+
+version : bootstrap5
+5.3.2
+
+website : https://getbootstrap.com/ 
+
+difference between bootstrap4 and bootstrap5 
+
+= in bootstrap4 there is 5 responsive tiers.
+  in bootstrap5 there is 6 responsive tiers.
+
+= in bootstrap4 plugins are available in jquery 
+    while in bootstrap5 available in javascript.
+
+
+
