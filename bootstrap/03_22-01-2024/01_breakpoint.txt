@@ -1,0 +1,18 @@
+        css mediaquery                         bootstrap class 
+    (1) max-width:576px                             - 
+    (2) min-width:576px                             sm (small)
+    (3) min-width:768px                             md (medium)
+    (4) min-width:992px                             lg (large)
+    (5) min-width:1200px                            xl (extra large)
+    (6) min-width:1400px                            xxl (extra extra large)
+
+
+grid system : 
+- give row and col facility 
+- total 12 column facility.
+classes are : row and col-(value) i.e. 1 to 12 
+
+containers classes : 
+(1) container 
+
+(2) container-fluid 
