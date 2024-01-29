@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.header .dropdown-toggle::after {
+    content: "";
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+}
+.header .navbar-toggler {
+    border-radius: 0;
+    border: 1px solid white;
+    background-color: white;
+}
+.header .navbar-toggler:focus {
+    box-shadow: none;
+}
+.homeCarousel .slider1{
+    background: url(https://wallpapers.com/images/featured/desktop-lsjkr6wg7ctq97qv.jpg) no-repeat center;
+    background-size: cover;
+    padding: 200px 50px;
+    position: relative;
+    z-index: 1;
+}
+.homeCarousel .slider2{
+    background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700807779.jpg) no-repeat center;
+    background-size: cover;
+     padding: 200px 50px;
+     position: relative;
+     z-index: 1;
+}
+.homeCarousel .slider3{
+    background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700632016.jpg) no-repeat center;
+    background-size: cover;
+     padding: 200px 50px;
+     position: relative;
+     z-index: 1;
+}
+.homeCarousel .slider1:after, .slider2:after, .slider3:after{
+    content: "";
+    position: absolute;
+    top :0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.531);
+    z-index: -1;
+}
+.about a{
+    transition: .4s ease;
+}
+.about a:hover{
+    color :#e4aa23 !important;
+}
+.CardDesign .card{
+    border: none !important;
+}
+.loginpage{
+    background-color: rgba(0, 0, 0, 0.414);
+}
+.loginpage input[type="email"],[type="password"] {
+    border: none;
+    border-bottom: 2px solid black !important;
+    border-radius: 0;
+}
+
+.loginpage input[type="email"]:focus, [type="password"]:focus {
+    box-shadow: none;
+    outline: none;
+
+}
+@media (max-width:576px) {
+    .homeCarousel .slider1{
+        padding: 50px 20px;
+    }
+    .homeCarousel .slider2{
+        padding: 50px 20px;
+    }
+    .homeCarousel .slider3{
+        padding: 50px 20px;
+    }
+}
